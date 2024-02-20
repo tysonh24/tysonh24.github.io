@@ -1,204 +1,111 @@
-* {
-  box-sizing: border-box;
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: "Lucida Grande";
-}
-
-a {
-  text-decoration: none;
-}
-
-.clear {
-  clear: left;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
+header h1 {
+    font-size: 2.5em;
 }
 
-.header-left {
-  float: left;
+nav ul {
+    list-style: none;
 }
 
-.header-right {
-  float: right;
-  margin-right: -25px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+nav ul li a:hover {
+    color: #ff4500; /* OrangeRed */
 }
 
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
+.section {
+    padding: 40px 0;
 }
 
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.section p {
+    font-size: 1.1em;
 }
 
 footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Add some fun and unique styles */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+nav ul li {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.section {
+    text-align: center;
+}
+
+.section p {
+    color: #666;
+}
+
+footer p {
+    font-style: italic;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
 }
